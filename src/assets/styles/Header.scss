@@ -1,0 +1,331 @@
+.header {
+    width: 100%;
+    position: fixed;
+    background-color: transparent;
+    z-index: 5;
+
+    .Container {
+        position: relative;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 80vw;
+        margin: 0 auto;
+        height: 135px;
+        width: 100%;
+
+        .Logo {
+            display: flex;
+            align-items: center;
+    
+            h1 {
+                text-transform: uppercase;
+                margin-right: 0.2em;
+                color: var(--title-color);
+            }
+    
+            .note {
+                color: var(--btn-color);
+            }
+    
+            p {
+                margin-left: 0.5em;
+                color: #5c6179;
+            }
+        }
+    
+        .Menu {
+            display: flex;
+            align-items: center;
+    
+            button {
+                color: white;
+                background-color: var(--btn-color);
+                border: 1px solid var(--btn-color);
+            }
+    
+            button:hover {
+                color: var(--btn-color);
+                background-color: transparent;
+                padding: 1em 1.5em;
+                border-radius: 2em;
+                border: 1px solid var(--btn-color);
+            }
+
+            .TotalLine {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 2em;
+
+                .Open {
+                    z-index: 3;
+                }
+
+                .Line {
+                    position: absolute;
+                    cursor: pointer;
+                    color: var(--btn-color);
+                    background-color: white;
+                    padding: 1.5em 1.5em;
+                    border-radius: 100%;
+                    border: 1px solid var(--btn-color);
+        
+                    svg {
+                        scale: 2.5;
+                    }
+                }
+        
+                .Line:hover {
+                    color: white;
+                    background-color: var(--btn-color);
+                    padding: 1.5em 1.5em;
+                    border-radius: 100%;
+                    border: 1px solid var(--btn-color);
+        
+                    svg {
+                        scale: 2;
+                    }
+                }
+            }
+        }
+
+        .DroppedMenu {
+            position: absolute;
+            right: 0;
+            top: 120px;
+            background-color: white;
+            color: var(--btn-color);
+            border-radius: 1em;
+            text-align: center;
+            transform: translateX(100%);
+            opacity: 0;
+            transition: all 0.5s ease-in-out;
+
+            li {
+                cursor: pointer;
+                padding:1.5em 8em;
+                border-radius: 1em;
+                border-bottom: 1px solid #d1d9ff;
+            }
+
+            li:hover {
+                scale: 1.04;
+                padding:1.7em 8em;
+                color: white;
+                background-color: var(--btn-color);
+                border-bottom: 1px solid var(--btn-color);
+            }
+        }
+    }
+}
+
+.header.scrolled {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    
+    .Container {
+        height: 115px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .header {  
+        .Container {
+            position: relative;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 80vw;
+            margin: 0 auto;
+            height: 95px;
+            width: 100%;
+
+            
+        .Menu {
+            .TotalLine {
+                .Open {
+                    z-index: 3;
+                }
+
+                .Line {
+                    padding: 1em 1em;
+
+                    svg {
+                        scale: 1.5;
+                    }
+                }
+            }
+        }
+
+            .DroppedMenu {
+                position: absolute;
+                right: 0;
+                top: 85px;
+                background-color: white;
+                color: var(--btn-color);
+                border-radius: 1em;
+                text-align: center;
+                transform: translateX(100%);
+                opacity: 0;
+                transition: all 0.5s ease-in-out;
+    
+                li {
+                    cursor: pointer;
+                    padding:1em 6em;
+                    border-radius: 1em;
+                    border-bottom: 1px solid #d1d9ff;
+                }
+    
+                li:hover {
+                    scale: 1.04;
+                    padding:1em 6em;
+                    color: white;
+                    background-color: var(--btn-color);
+                    border-bottom: 1px solid var(--btn-color);
+                }
+            }
+        }   
+    }    
+  }
+
+  
+  @media screen and (max-width: 1200px) and (min-height : 1200px) {
+    .header {  
+        .Container {
+            max-width: 80vw;
+            margin: 0 auto;
+            height: 175px;
+            width: 100%;
+    
+            .Logo {
+
+                p {
+                   display: none;
+                }
+            }
+        
+            .Menu {
+
+                .TotalLine {
+
+                    .Line {
+                        position: absolute;
+                        cursor: pointer;
+                        color: var(--btn-color);
+                        background-color: white;
+                        padding: 1.5em 1.5em;
+                        border-radius: 100%;
+                        border: 1px solid var(--btn-color);
+            
+                        svg {
+                            scale: 2.5;
+                        }
+                    }
+            
+                    .Line:hover {
+                        color: white;
+                        background-color: var(--btn-color);
+                        padding: 1.5em 1.5em;
+                        border-radius: 100%;
+                        border: 1px solid var(--btn-color);
+            
+                        svg {
+                            scale: 2;
+                        }
+                    }
+                }
+            }
+    
+            .DroppedMenu {
+                top: 135px;
+            }
+        }
+    }
+  }
+  
+  @media screen and (max-width: 900px) and (min-height : 800px) {
+    .header {  
+        .Container {
+            max-width: 80vw;
+            margin: 0 auto;
+            height: 175px;
+            width: 100%;
+    
+            .Logo {
+
+                p {
+                   display: none;
+                }
+            }
+        
+            .Menu {
+
+                .TotalLine {
+
+                    .Line {
+                        position: absolute;
+                        cursor: pointer;
+                        color: var(--btn-color);
+                        background-color: white;
+                        padding: 1.5em 1.5em;
+                        border-radius: 100%;
+                        border: 1px solid var(--btn-color);
+            
+                        svg {
+                            scale: 2.5;
+                        }
+                    }
+            
+                    .Line:hover {
+                        color: white;
+                        background-color: var(--btn-color);
+                        padding: 1.5em 1.5em;
+                        border-radius: 100%;
+                        border: 1px solid var(--btn-color);
+            
+                        svg {
+                            scale: 2;
+                        }
+                    }
+                }
+            }
+    
+            .DroppedMenu {
+                top: 135px;
+            }
+        }
+    }
+  }
+
+  @media screen and (max-width: 768px) and (min-height : 700px) {
+    .header {
+        
+    .Container {
+        height: 135px;
+             .Logo {
+
+                p {
+                   display: none;
+                }
+            }
+
+        .Menu {
+    
+            button {
+                display: none;
+            }
+        }
+
+        .DroppedMenu {
+            li {
+                padding:1.5em 6em;
+            }
+        }
+    }
+}
+  }

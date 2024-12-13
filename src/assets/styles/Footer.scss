@@ -1,0 +1,282 @@
+footer {
+    background-color: var(--title-color);
+    width: 100%;
+    padding: 1em 0;
+    color: white;
+
+    img {
+        height: 3vw;
+        width: 3vw;
+        border-radius: 100%;
+    }
+
+    img.kiemduyet {
+        border-radius: 0;
+        width: 10vw;
+        height: auto;
+    }
+
+    img:hover {
+        opacity: 0.7;
+    }
+
+    h2 {
+        margin: 1em 0;
+    }
+
+    li,a {
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        width: 22vw;
+        margin: 1em 0;
+    }
+
+    @media screen and (max-width: 1200px) {
+        li,a {
+            font-size: 0.8em;
+        } 
+      }
+
+    a:hover {
+        text-decoration: underline;
+    }
+    ul {
+        width: 20vw;
+        padding: 0 15px;
+        margin-top: 20px;
+        display: block;
+    }
+
+    .TotalFooter {
+        justify-content: space-between;
+        background-color: transparent;
+        max-width: 80vw;
+        display: flex;
+        margin: 0 auto;
+
+        .Total_1 {
+            width: 25vw;
+            li {
+                width: 100%;
+            }
+        }
+
+        .icon {
+            display: flex;
+
+            a {
+                width: 70px;
+            }
+        }
+    }
+
+    p {
+        margin: 0 auto;
+        max-width: 80vw;
+        padding-left: 10px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) and (min-height : 1200px) {
+    footer {
+        padding: 2em 0;
+        
+        img {
+            height: 8vw;
+            width: 8vw;
+            border-radius: 100%;
+        }
+
+        img.kiemduyet {
+            width: 30vw;
+        }
+
+        img:hover {
+            opacity: 0.7;
+        }
+
+        h2 {
+            margin: 1em 0;
+        }
+
+        li,a {
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            width: 80vw;
+            margin: 2em 0;
+        }
+
+        ul {
+            width: 100%;
+            padding: 0 15px;
+            margin-top: 20px;
+            display: block;
+        }
+
+        .TotalFooter {
+            background-color: transparent;
+            max-width: 80vw;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+
+            .Total_1 {
+                width: 80vw;
+                li {
+                    width: 100%;
+                }
+            }
+
+            .icon {
+                display: flex;
+
+                a {
+                    width: 80vw;
+                }
+            }
+        }
+        p {
+            margin: 0 auto;
+            max-width: 80vw;
+            padding-left: 10px;
+        }
+    }
+  }
+  
+        
+@media screen and (max-width: 900px) and (min-height : 800px) {
+    
+    footer {
+        padding: 2em 0;
+        
+        img {
+            height: 8vw;
+            width: 8vw;
+            border-radius: 100%;
+        }
+
+        img.kiemduyet {
+            width: 30vw;
+        }
+
+        img:hover {
+            opacity: 0.7;
+        }
+
+        h2 {
+            margin: 1em 0;
+        }
+
+        li,a {
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            width: 80vw;
+            margin: 2em 0;
+        }
+
+        ul {
+            width: 100%;
+            padding: 0 15px;
+            margin-top: 20px;
+            display: block;
+        }
+
+        .TotalFooter {
+            background-color: transparent;
+            max-width: 80vw;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+
+            .Total_1 {
+                width: 80vw;
+                li {
+                    width: 100%;
+                }
+            }
+
+            .icon {
+                display: flex;
+
+                a {
+                    width: 80vw;
+                }
+            }
+        }
+        p {
+            margin: 0 auto;
+            max-width: 80vw;
+            padding-left: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) and (min-height : 500px) {
+    footer {
+        padding: 2em 0;
+        
+        img {
+            height: 15vw;
+            width: 15vw;
+            border-radius: 100%;
+        }
+
+        img.kiemduyet {
+            width: 30vw;
+        }
+
+        img:hover {
+            opacity: 0.7;
+        }
+
+        h2 {
+            margin: 1em 0;
+        }
+
+        li,a {
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            width: 80vw;
+            margin: 2em 0;
+        }
+
+        ul {
+            width: 100%;
+            padding: 0 15px;
+            margin-top: 20px;
+            display: block;
+        }
+
+        .TotalFooter {
+            background-color: transparent;
+            max-width: 80vw;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+
+            .Total_1 {
+                width: 80vw;
+                li {
+                    width: 100%;
+                }
+            }
+
+            .icon {
+                display: flex;
+
+                a {
+                    width: 80vw;
+                }
+            }
+        }
+        p {
+            margin: 0 auto;
+            max-width: 80vw;
+            padding-left: 10px;
+        }
+    }
+  }

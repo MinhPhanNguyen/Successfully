@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color : #F5f5f5;
+  --bg-color-1 : #FFFFFF;
+  --bg-color-2 : #F7F6FF;
+  --bg-color-3 : #eaf0ef;
+  --txt-color-light: #6f78a5;
+  --txt-color-night: #fff;
+  --btn-color: #008aff; 
+  --title-color: #101c58;
+  --des-color-night: #75C79D;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", Tahoma, Arial, Helvetica;
+  transition: all 0.3s ease-in-out;
+  scroll-behavior: smooth;
+  border: 0;
+  outline: 0px;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  text-align: left;
+  font-size: 2.2em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 1em;
+}
+
+li, a {
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+button {
+  padding: 1em 1.5em;
+  border-radius: 5em;
+  margin-right: 1.5em;
+}
+
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 1.3em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  h3 {
+    font-size: 0.9em;
+  }
+
+  p {
+    font-size: 0.8em;
+  }
+
+  button {
+    padding: 0.8em 1.2em;
+    border-radius: 5em;
+    margin-right: 1em;
+  }
+}
+
+
+@media screen and (max-width: 1200px) and (min-height : 1200px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  button {
+    padding: 1em 1.5em;
+    border-radius: 5em;
+    margin-right: 1em;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-height : 800px) {
+  h1 {
+    font-size: 2.4em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1.3em;
+  }
+
+  button {
+    padding: 0.8em 1.2em;
+    border-radius: 5em;
+    margin-right: 1em;
+  }
+}
+
+  @media screen and (max-width: 768px) and (min-height : 700px) {
+    h1 {
+      font-size: 1.5em;
+    }
+
+    h2 {
+      font-size: 1em;
+    }
+
+    h3 {
+      font-size: 1.1em;
+    }
+
+    p {
+      font-size: 0.8em;
+    }
+
+    button {
+      padding: 0.5em 1em;
+      border-radius: 5em;
+      margin-right: 1em;
+    }
+  }
